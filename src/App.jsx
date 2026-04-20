@@ -6,7 +6,8 @@ import {Theme} from "./context/ThemeContext";
 
 
 function App() {
-  const apikey = "9927a0fbd736effda0df2d1b5071b441";
+
+  const apikey = import.meta.env.API_KEY;
 
   const [search, setSearch] = useState("Delhi");
   const [weather, setWeather] = useState(null);
