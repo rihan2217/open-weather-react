@@ -7,7 +7,9 @@ import {Theme} from "./context/ThemeContext";
 
 function App() {
 
-  const apikey = import.meta.env.API_KEY;
+  const apikey = import.meta.env.VITE_API_KEY;
+
+  // console.log(import.meta.env);
 
   const [search, setSearch] = useState("Delhi");
   const [weather, setWeather] = useState(null);
